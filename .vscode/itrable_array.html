@@ -1,0 +1,23 @@
+<html>
+<body>
+
+<h2>JavaScript Iterables</h2>
+<p>Iterate over an Array:</p>
+
+<p id="demo"></p>
+
+<script>
+    // Create aa Array
+    const letters = ["a", "b", "c"];
+
+    // List all Elements
+    let arr = "";
+    for (const x of letters) {
+        arr += x + "<br>";
+    }
+
+    document.getElementById("demo").innerHTML = arr;
+</script>
+</body>
+
+</html>

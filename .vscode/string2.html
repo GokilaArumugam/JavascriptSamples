@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The length Property</h2>
+
+    <p>The length of the string is:</p>
+    <p id="demo"></p>
+
+    <script>
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo").innerHTML = text.length;
+    </script>
+
+    <h1>Never Create Strings as Objects</h1>
+    <h2>Strings and objects cannot be safely compared.</h2>
+    
+    <p id="demo"></p>
+    
+    <script>
+        let x = "John";        // x is a string
+        let y = new String("John");  // y is an object
+        document.getElementById("demo").innerHTML = (x == y);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Dates</h1>
+    <h2>The getTimezoneOffset() Method</h2>
+
+    <p>The time zone difference in minutes is:</p>
+    <p id="demo"></p>
+
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d.getTimezoneOffset();
+    </script>
+    <h2>The getDay() Method</h2>
+<p>Return the weekday as a number:</p>
+
+<p id="demo"></p>
+
+<script>
+const dt = new Date("2021-03-25");
+document.getElementById("demo").innerHTML = dt.getDay();
+</script>
+<h2>The getMilliseconds() Method</h2>
+<p>Return the milliseconds of a date as a number (0-999):</p>
+
+<p id="demo"></p>
+
+<script>
+    const ds = new Date();
+    document.getElementById("demo").innerHTML = ds.getMilliseconds();
+</script>
+<h2>The getSeconds() Method</h2>
+<p>Return the seconds of a date as a number (0-59):</p>
+
+<p id="demo"></p>
+
+<script>
+    const dsec = new Date("2021-03-25");
+    document.getElementById("demo").innerHTML = dsec.getSeconds();
+</script>
+
+<h2>The getHours() Method</h2>
+<p>Return the hours of a date as a number (0-23):</p>
+
+<p id="demo"></p>
+
+<script>
+    const dh = new Date("2021-03-25"); document.getElementById("demo").innerHTML = dh.getHours();
+</script>
+
+<h2>The getDate() Method</h2>
+<p>Return the day of a date as a number (1-31):</p>
+
+<p id="demo"></p>
+
+<script>
+    const dd = new Date("2021-03-25");
+    document.getElementById("demo").innerHTML = dd.getDate();
+</script>
+</body>
+
+</html>

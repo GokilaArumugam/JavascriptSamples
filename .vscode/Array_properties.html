@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Array Length</h2>
+    <p>The length property returns the length of an array.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits.length;
+    </script>
+<h2>Use Push</h2>
+
+<p>The push method appends a new element to an array.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+    const fruit = ["Banana", "Orange", "Apple"];
+    document.getElementById("demo").innerHTML = fruit;
+
+    function myFunction() {
+        fruit.push("Lemon");
+        document.getElementById("demo").innerHTML = fruit;
+    }
+</script>
+<h2>JavaScript Arrays</h2>
+
+<p>Adding elements with high indexes can create undefined "holes" in an array.</p>
+
+<p id="demo"></p>
+
+<script>
+    const Fruits = ["Banana", "Orange", "Apple"];
+    Fruits[6] = "Lemon";
+
+    let fLen = Fruits.length;
+    let text = "";
+    for (i = 0; i < fLen; i++) {
+        text += Fruits[i] + "<br>";
+    }
+
+    document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+
+</html>

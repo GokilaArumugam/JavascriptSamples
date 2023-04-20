@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript For In Loop</h2>
+    <p>The for in statement loops through the properties of an object:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const person = { fname: "John", lname: "Doe", age: 25 };
+
+        let txt = "";
+        for (let x in person) {
+            txt += person[x] + " ";
+        }
+
+        document.getElementById("demo").innerHTML = txt;
+    </script>
+    <h2>JavaScript For In</h2>
+    <p>The for in statement can loops over array values:</p>
+    
+    <p id="demo"></p>
+    
+    <script>
+        const numbers = [45, 4, 9, 16, 25];
+
+        let text = "";
+        for (let x in numbers) {
+            text += numbers[x] + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+    <h2>JavaScript Array.forEach()</h2>
+    <p>Calls a function once for each array element.</p>
+    
+    <p id="demo"></p>
+    
+    <script>
+        const number = [45, 4, 9, 16, 25];
+
+        let Txt = "";
+        number.forEach(myFunction);
+        document.getElementById("demo").innerHTML = Txt;
+
+        function myFunction(value) {
+            Txt += value + "<br>";
+        }
+    </script>
+<h2>JavaScript For Of Loop</h2>
+<p>The for of statement loops through the values of any iterable object:</p>
+
+<p id="demo"></p>
+
+<script>
+    const cars = ["BMW", "Volvo", "Mini"];
+
+    let texts = "";
+    for (let x of cars) {
+        texts += x + "<br>";
+    }
+
+    document.getElementById("demo").innerHTML = texts;
+</script>
+
+</body>
+
+</html>

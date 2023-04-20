@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Number Methods</h2>
+
+    <p>The Number() method converts variables to numbers:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML =
+            Number(true) + "<br>" +
+            Number(false) + "<br>" +
+            Number("10") + "<br>" +
+            Number("  10") + "<br>" +
+            Number("10  ") + "<br>" +
+            Number(" 10  ") + "<br>" +
+            Number("10.33") + "<br>" +
+            Number("10,33") + "<br>" +
+            Number("10 33") + "<br>" +
+            Number("John");
+    </script>
+<h2>The isInteger() Method</h2>
+
+<p>The isInteger() method returns true if the argument is an integer.</p>
+<p>Otherwise it returns false.</p>
+
+<p id="demo"></p>
+
+<script>
+    document.getElementById("demo").innerHTML =
+        Number.isInteger(10) + "<br>" + Number.isInteger(10.5);
+</script>
+<h2>The isSafeInteger() Method</h2>
+
+<p>The isSafeInteger() method returns true if the argument is a safe integer.</p>
+<p>Otherwise it returns false.</p>
+
+<p id="demo"></p>
+
+<script>
+    document.getElementById("demo").innerHTML =
+        Number.isSafeInteger(10) + "<br>" + Number.isSafeInteger(12345678901234567890);
+</script>
+
+</body>
+
+</html>
